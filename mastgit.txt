@@ -93,4 +93,10 @@ Conceptos Basicos
 para esto vamos a agragar informacion al documento , al terminar revisaremos git status , nos muestra el archivo de color rojo 
 ahora para agregar el archivo a index git add .  el archivo se pasa al area de trabajo index , donde el estado de git me dice que el archivo 
 se modifica y organiza llamemos el comando " git diff" no ve diferencias,el area de trabajo y el index estan alineados , pero si comparamos el index 
-y el repositorio con "git diff --cached "se podran ver los cambios , estan listos para entrar en el proximo commit  
+y el repositorio con "git diff --cached "se podran ver los cambios , estan listos para entrar en el proximo commit 
+
+entonces con estas operaciones movimos los datos de izquierda a derecha, del area de trabajo al index, y luego al repositorio 
+si miramos con el comando git diff y git diff --cached estaremos en estado limpio nuevamente , al observar el ultimo commit , podremos ver 
+que creo una confirmacion y nuevos objectos , en ese orden de ideas commit mueve datos y cambia el repositorio 
+
+MOVER DATOS A LA IZQUIERDA
