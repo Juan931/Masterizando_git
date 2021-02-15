@@ -119,3 +119,17 @@ oficial del proyecto ,podriamos agregarlo al repositorio , pero que pasa si  nos
 hacer algo en ese archivo y volver a el mas tarde , en otras palabras quiero al archivo en el lugar de trabajo pero no en el index, 
 por lo que podriamos usar el comando  "git rm --cached nombre de archivo " y nos va a eliminar la copia del archivo en el index 
 
+CAMBIO DE NOMBRES DE ARCHIVOS 
+
+Veamos la diferencia entre mover y renombrar archivos , basicamente es lo mismo la diferencia es que
+al yo tener un archivo tanto en el lugar de trabajo como en index y el repositorio, y cambio el nombre del archivo 
+en el lugar de trabajo , pero en index y el repositorio seguiran con el mismo nombre .
+
+al mirar con git status nos mostrar el nombre del archivo que se elimino y otro que esta pendiente por agregar , como le podemos decir a git 
+que es el mismo archivo pero solo con nombre diferente , la buena noticia es que no necesitamos hacer eso , lo que debemos hacer es lo siguiente
+-git add nombre del nuevo archivo
+-git add nombre del archivo que se elimino , esto es para sobreescribir los datos y como hay un archivo en el lugar de trabajo que no es del mismo nombre
+eliminara el anterior automaticamente dejando el nuevo .
+
+al pedir el estado "git status " nos mostrara que los archivos fueron renombrados , esto funciona tanto para nombrar como para mover archivos
+al confirmar , automaticamente el archivo pasa al repositorio con el nuevo nombre , git rastrea los movimientos y cambios de nombre automaticamente 
