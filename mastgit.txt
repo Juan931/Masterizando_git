@@ -111,4 +111,11 @@ HEAD cambio de posision a otra rama , es decir no es que los datos hayan cambiad
 copiar los datos actuales tanto al area de trabajo como a index , asi que las tres areas tiene el mismo contenido , y esto sucede porque head se mueve a otra rama
 copia datos del repositorio de trabajo , al index , ESTAMOS RESPONDIENDO LAS DOS PREGUNTAS PRINCIPALES DE COMO FUNCIONA GIT .
 
-ELIMIANR ARECHIVOS 
+ELIMIANR ARCHIVOS 
+
+podemor crear nuevos archivos , y al mirar git status veremos que  pide agregarlo al indice , lo podemos confirmar para agregarlo pero git no sabe aun que hacer con el 
+al mirar nos va arrojar que el archivo es new file , el archivo se encuentra entre el area de trabajo y el indice , pero no esta en el repositorio , todavia no es una parte 
+oficial del proyecto ,podriamos agregarlo al repositorio , pero que pasa si  nos arrepentimos y no queremos agregarlo y lo queremos eliminar del index y lo que queremos es 
+hacer algo en ese archivo y volver a el mas tarde , en otras palabras quiero al archivo en el lugar de trabajo pero no en el index, 
+por lo que podriamos usar el comando  "git rm --cached nombre de archivo " y nos va a eliminar la copia del archivo en el index 
+
