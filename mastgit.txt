@@ -1,0 +1,87 @@
+
+LAS CUATRO AREAS DE INTRODUCCION 
+
+Nos sentraremosen como git ve el mundo , en como piensa de los datos y flujo de trabajo , que sucede cuando 
+realizamos operaciones comunes como verificar una confirmacion o restablecer una rama , hablaremos de como datos 
+y como hacer cosas interesantes con ellos , hay  tres partes importantes que se dividen de la siguiente manera,
+
+1 Conceptos claves en un proyecto de git
+2 operaciones basicas de git mueven los datos atravez de las cuatro AREAS
+3 git reset 
+4 las cuatro areas herramientas avanzadas 
+
+Despues tendremos una segunda parte que son de la siguiente manera
+
+dos modulos que traten de la historia del proyecto 
+el primero es sobre el historial de navegacion , explorar el pasado si se desea 
+por ultimo modulo se destaca por si solo , se trata mas de trabajo en equipo 
+
+LINEAS DE COMANDOS
+
+las lineas de comando es nuestro amigo , por lo que se nos hace facil aprender git 
+
+areas en las que se trabajara en git 
+
+1 directorio de proyectos, sistema de archivos en el area de trabajo es donde se guarda los archivos y las carpetas actuales
+2 Repositorio , es donde usamos git y contiene toda la historia del proyecto cuando "commit" cosas van aqui , entre 
+3 el index : estas dos areas hay una llamada index , que se encuentra en la mitad de estas dos , es donde se colocan los archivos antes de una confirmacion "commit"
+es escencial entender como funciona el index  
+4 stash: es un area de almacenamiento temporal llamada stash, no es tan importante como las otras tres pero es util .
+
+si de verdad queremos entender Gir hay dos preguntas importantes que nos debemos hacer y son las siguientes;
+
+1 como mueve este comando los datos atravez de las cuatro areas 
+2 que hace este comando especificamente al repositorio 
+
+no importa que tan confuso se vea un comando siempre y cuando pueda responder estas dos preguntas ,
+
+EL AREA DE TRABAJO 
+
+*El area de trabajo  , debemos entender las partes internas de git antes de continuar 
+debemos entender el directorio del proyecto en su sistema de archivos , aqui es donde trabaja edita sus archivos , pruebe su codigo etc 
+aca encontraremos archivos y carpetas , si queremos cambiar un archivo siplemente lo editariomoas o moveriamos 
+todo esto ocurre en el area de trabajo. 
+
+para git el area de trabajo es algo muy temporal , por ello es importante no asumir un archivo que esta guardado antes de de realizar una confirmacion para 
+que los datos se guarden al repositorio.
+
+el repositorio esta en la carpeta .git , las bases mas importantes se encuentran en una carpeta llamada object,
+hay algunos tipos diferentes de objectos en la base de datos , algunos objetos representan el contenido de un archivo
+algun momento de la historia del proyecto estos objetos se llaman blob  , y luego hay otro objetos llamados arboles que representan carpetas
+en el proyecto , y tambien hay compromisos "commit", todos estos objetos son inmutables se pueden crear y eliminar pero nunca 
+se pueden cambiar , estso objetos estan unidos entre si en una estructura unida que representa el historial del proyecto ,
+cada confirmacion apunta a un grafico de blobs y arboles que representan sus archivos y carpetas .
+
+cada confirmacion es como una instantanea de su area de trabajo en un determinado momento , tambien dos confirmaciones pueden compartir los mismos objetos entre si
+esta es la forma en que git almacena los cambios en archivosy directorios.
+
+En la historio de un proyecto de git cada confirmacion apunta a sus confirmaciones principales , es decir si te refieres a alguna confirmacion ,te refieres tambien 
+a las que estan añadidas a ellas otras confirmaciones, las confirmaciones son instantanes , esto hace parte de una porcion de historia de su proyecto 
+
+las ramas son una referencia a una confirmacion , y debido a que hace referencia a la confirmacion y las confirmaciones estan vinculadas entre si 
+para formar un historial , la rama es basicamente el punto de entrada a un historial de confirmaciones y puede tener multiples ramas que son 
+multiples sectores de la historia .
+
+finalmente hay un puntero especial llamado HEAD solo puede haber una cabeza y esta apunta a la rama actual y la rama apunta a una confirmacion actual , 
+aveces puedes realizar operaciones que resultan en confirmaciones a las que no se pueden acceder desde ninguna rama , es decir si elimino una rama las confirmaciones 
+que estaban dentro de ella quedan en el limbo inalcansables , por lo que no hay una rama que las señale directemente ni indirectamente , entonces lo que hara git sera 
+eliminar esas confirmaciones .
+
+EL INDEX "Indice"
+
+El index es una cosa muy peculiar , ya que es exclusivo de git ya que es el unico sistema de control de versiones que le permite modificar el index directamente
+ya que es algo que se interpone entre el area de trabajo y el repositorio , porque generalmente no mueve los datos del area de trabajo al repositorio
+va al index, es por eso que se llama area de preparacion , se puede organizar los cambios agregandolos desde el area de trabajo al Indice
+y luego se confirman los cambios del indice al repositorio .
+
+cuando decimos  que hay un archivo en el repositorio ,generalmene se refiere a algo mas especifico , quiere decir que el archivo esta en la confirmacion actual de repositorio 
+el repositorio tambien contiene mas cosas, basicamente toda la historia del proyecto .
+
+si observamos dentro de la carpet .git encontraremos otra que es index es un archivo binario, por lo que no se puede abrir con un editor de texto ,  por lo general el index para 
+y confirma al repositorio , pero en este caso imaginaremos que el index no quedara vacio , al contrario tendra los mismo datos que el repositorio .
+
+utilicemos git diff, este comando nos ayuda a mirar las diferencias entre estas dos areas , una cosa que es un poco contradictoria es que si usamos git diff 
+es que si se usa git diff sin ningun argumento comparara el area de trabajo con el index,  entonces nos mostrara que esta bacio .
+
+por lo general usamos git status para ver lo que vamos a comprometer , pero como queremos mirar que es lo que se va a comprometer entre el index y el repositorio usamos 
+-git diff --cached 
