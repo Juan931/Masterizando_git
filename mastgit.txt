@@ -100,3 +100,15 @@ si miramos con el comando git diff y git diff --cached estaremos en estado limpi
 que creo una confirmacion y nuevos objectos , en ese orden de ideas commit mueve datos y cambia el repositorio 
 
 MOVER DATOS A LA IZQUIERDA
+
+se te ocurre un comando que mueva datos a la otra direccion desde el repositorio y es "checkout " lo que hace este comando es mover HEAD a otra rama 
+y lo segundo que hace es tomar datos de la nueva confirmacion actual y copia esos datos del repositorio al area de trabajo y al index , entonces cambia el 
+repositorio y mueve los datos en segundo lugar , para ello veamos las diferencias que hay de una rama aa otra de la siguiente manera 
+
+-git diff nombre de la rama y la otra rama seguido , nos mostrar los cambios que se han hecho, entonces que pasa 
+si revisamos la otra rama con "checkout " pasa lo siguiente y veremos que hay un commit apuntando hacia ella , tambien lo que sucedio es que 
+HEAD cambio de posision a otra rama , es decir no es que los datos hayan cambiado , es que HEAD cambio de posicion y la segunda y ultima que hizo fue 
+copiar los datos actuales tanto al area de trabajo como a index , asi que las tres areas tiene el mismo contenido , y esto sucede porque head se mueve a otra rama
+copia datos del repositorio de trabajo , al index , ESTAMOS RESPONDIENDO LAS DOS PREGUNTAS PRINCIPALES DE COMO FUNCIONA GIT .
+
+ELIMIANR ARECHIVOS 
