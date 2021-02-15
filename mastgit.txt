@@ -84,4 +84,13 @@ utilicemos git diff, este comando nos ayuda a mirar las diferencias entre estas 
 es que si se usa git diff sin ningun argumento comparara el area de trabajo con el index,  entonces nos mostrara que esta bacio .
 
 por lo general usamos git status para ver lo que vamos a comprometer , pero como queremos mirar que es lo que se va a comprometer entre el index y el repositorio usamos 
--git diff --cached 
+-git diff --cached , esto lo que hace es alinear el indice y la ultima confirmacion , 
+
+LAS CUATRO AREAS DEL FLUJO DE TRABAJO 
+
+Conceptos Basicos 
+
+para esto vamos a agragar informacion al documento , al terminar revisaremos git status , nos muestra el archivo de color rojo 
+ahora para agregar el archivo a index git add .  el archivo se pasa al area de trabajo index , donde el estado de git me dice que el archivo 
+se modifica y organiza llamemos el comando " git diff" no ve diferencias,el area de trabajo y el index estan alineados , pero si comparamos el index 
+y el repositorio con "git diff --cached "se podran ver los cambios , estan listos para entrar en el proximo commit  
