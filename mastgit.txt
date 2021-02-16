@@ -216,3 +216,8 @@ lo primero es arreglar el conflicto y decidir como iran estos cambios en el arch
 -git add 
 git commit , git nos muestra automaticamente que se soluciono el problema y se compromete 
 
+TRABAJAR CON RUTAS 
+
+Tenemos un archivo el cual modificamos , lo agregamos esta en index pero lo que remos restablecer 
+-git reset HEAD nombre del archivo , esto sirve para restablecer un archivo que ya esta comprometido , y vuelve al index
+git checkout HEAD nombre del archivo , esto nos sirve para trabajar sin tocar otros achivos 
