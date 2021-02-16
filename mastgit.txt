@@ -236,4 +236,16 @@ en trozos mas pequeños .
 podemos ir saltando entre trozos para escoger cual es el que queremos confirmar entonces lo podremos hacer 
 al volver y verificar con git status, nos arrojara que el archivo tiene datos pendientes por confirmar ,pero estos datos no los queremos confirmar todavia en el index
 
-PRESENTAMOS GIT Y RESTORE 
+PRESENTAMOS GIT SWITCH  Y RESTORE 
+
+Cambio y restauracion , ambos reamplazan alguna funcion del comando git checkout , se puede usar de diferentes maneras 
+muchas veces uno se pregunta porque el mismo comando hace estas dos cosas diferentes , git switch cambiar para tratar con ramas , y git RESTORE restaurar parar tratar un archivo 
+especificamente .
+
+git sugirio utilizar git RESTORE para la eliminacion de etapas en lugar de restablecer como lo hicieron antes, porque cuando se usa
+la restauracion puede especificar esta opcion en etapas , esto significa copiar los archivos desde el repositorio al index , no al area de trabajo .
+
+GIT ES UNA CAJA DE HERRAMIENTAS 
+
+Cada herramienta tiene caracteristicas diferentes , pero al mismo tiempo podemos hacer diferentes trabajos con cada una de ellas , en los cuatro modulos que vimos 
+experimentamos una caja de herramientas con git 
