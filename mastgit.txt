@@ -220,4 +220,19 @@ TRABAJAR CON RUTAS
 
 Tenemos un archivo el cual modificamos , lo agregamos esta en index pero lo que remos restablecer 
 -git reset HEAD nombre del archivo , esto sirve para restablecer un archivo que ya esta comprometido , y vuelve al index
-git checkout HEAD nombre del archivo , esto nos sirve para trabajar sin tocar otros achivos 
+-git checkout HEAD nombre del archivo , esto nos sirve para trabajar sin tocar otros achivos , asi que perdimo todos los cambios que le hicimos a ese archivo 
+
+CONFIRMACION DE PARTES DE UN ARCHIVO 
+
+Los atomos son un buen modelo para describir como es git , funciona en archivos y directorios , y ese atomo se puede dividir 
+tenemos una rama , dentro de esa rama tenremos un archivo al cual le hemos añadido informacion 
+digamos que algunos de los cambios que acabamos de realizar los queremos confirmar de inmediato y los otros confirmarlos mas adelante en un compromiso por separado 
+pero como lo hacemos si los datos pertenecen al mismo archivo .
+-git add --patch nombre del archivo , aca miraremos lo que pasa git mira los cambios que se hicieron y los divide en secciones llamados trozos y para cada trozo da una serie de 
+opciones , al dificil es de entender pero uno de ellos es el signo de ? que nos proporciona documentacion para las otras opciones 
+cuando los datos estan todos juntos , git lo toma todo como un solo trozo , debemos pedirle a gir que divida este trozo 
+en trozos mas pequeños .
+
+podemos ir saltando entre trozos para escoger cual es el que queremos confirmar entonces lo podremos hacer 
+al volver y verificar con git status, nos arrojara que el archivo tiene datos pendientes por confirmar ,pero estos datos no los queremos confirmar todavia en el index
+
