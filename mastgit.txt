@@ -249,3 +249,9 @@ GIT ES UNA CAJA DE HERRAMIENTAS
 
 Cada herramienta tiene caracteristicas diferentes , pero al mismo tiempo podemos hacer diferentes trabajos con cada una de ellas , en los cuatro modulos que vimos 
 experimentamos una caja de herramientas con git 
+
+HISTORIA EXPLARANDO EL PASADO   
+
+source my_env/bin/activate este comando espara python activarlo y para desactivarlo usamos deactivate
+
+
