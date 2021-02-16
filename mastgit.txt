@@ -133,3 +133,37 @@ eliminara el anterior automaticamente dejando el nuevo .
 
 al pedir el estado "git status " nos mostrara que los archivos fueron renombrados , esto funciona tanto para nombrar como para mover archivos
 al confirmar , automaticamente el archivo pasa al repositorio con el nuevo nombre , git rastrea los movimientos y cambios de nombre automaticamente 
+
+LAS CUATRO AREAS DE GIT RESET 
+
+entendiendo git reset 
+
+es normal utilizar git reset par un reinicio debemso estar familiarizados en entender como funciona el area de trabajo, el index, y el repositorio 
+para poder entender como funsiona reset , ya que tiene diferentes casos de usos .
+
+cuantos comando git sabemos que mueve una rama que son :
+
+-commit
+-merge
+- rebase
+-git pull: obtiene nuevas confirmaciones de un control remoto actualiza las ramas locales y remotas 
+
+lo importante para hacer el reinicio es entender que es lo que hace el reinicio a el area de trabajo y el index 
+
+si se le da la opcion --hard restablece los datos de la copia del nuevo commit acitual , tanto al area de trabajo como al index
+con la opcion --mixed restablece los datos actuales al index pero deja solo el area de trabajo 
+con la opcion --soft significa no tocar ninguna de estas dos ares , simplemente mueva las ramas y omita el paso 2 por completo .
+
+esto es lo que hace reset , primero mueva la rama actual por lo que tambien cambia la confirmacion actual 
+segundo copia los archivos y directorios del nuevo commit actual al area de trabajo y al siguiente 
+
+UN EJEMPLO DE REINICIO 
+
+estamos en las rama master verificamos y todo los datos estan en los tres lados , estando en el repositorio 
+ observaremos la confirmacion actual .
+
+ tengo un commit que contiene versiones de archivos y queremos que ese commit sea el ultimo 
+ entonces lo que haces es lo siguiente escribimos el comando seguido del numero del commit
+
+ git reset numero del commit , esto hara que la rama retroceda en el tiempo , las opciones para restablecer se trata de 
+ un restablecimiento parcial o un restablecimiento mixto 
