@@ -236,3 +236,4 @@ en trozos mas pequeños .
 podemos ir saltando entre trozos para escoger cual es el que queremos confirmar entonces lo podremos hacer 
 al volver y verificar con git status, nos arrojara que el archivo tiene datos pendientes por confirmar ,pero estos datos no los queremos confirmar todavia en el index
 
+PRESENTAMOS GIT Y RESTORE 
