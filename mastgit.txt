@@ -171,4 +171,12 @@ estamos en las rama master verificamos y todo los datos estan en los tres lados 
  para restablecer de una forma completa lo que podemos hacer es para estar limpios otra vez es 
 
  -git reset --hard nombre de la rama en la que queremos estar , lo que hace git es arrastrar los archivos que tenemos en esa rama 
- y copiarlos tanto en el repositorio como index y lugar de trabajo 
+ y copiarlos tanto en el repositorio como index y lugar de trabajo .
+
+ MAS EJEMPLOS DE REINICIO 
+
+ Que pasa si agregue algo al index pero no estoy seguro de confirmarlos y quiero que permanezcan en el area de trabajo primero 
+ podemos utilizar un reinicio en HEAD que seria el siguiente -git reset HEAD , esto quiere decir que estamos moviendo la rama actual al commit señalado 
+ por HEAD , pero la rama actual ya esta apuntando , el resultado es que destabiliza los cambios volviendo los datos al repositorio , el archivo 
+ aparecera en rojo pero no queremos agregarlo , en este caso lo que podemos hacer es 
+ -git reset --hard HEAD hay que tener cuidado con este comando ya que es una de las formas mas destructivas que pueden haber , 
