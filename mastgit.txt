@@ -199,3 +199,20 @@ cosas que escondimos .
 -git stash aplly , nos aparecera en rojo , los elementos en el area de trabajo lo mismo pasa si los tenemos al principio y todavia no queremos agregarlos ni confirmarlos 
 tambien podemos eliminar algo del stash - git stash clear 
 
+RESOLVER CONFLICTOS 
+
+Los conflictos de una fusion , en la vida real podemos tener conflictos , al fusionar una rama con la otra por lo general se presentan conflictos 
+y aparecen muchas veces de la siguiente manera .
+
+<<<<<<<HEAD
+=======
+>>>>>>>
+
+Git no puede decidir cual de estos cambios vienen primero o si uno de estos cambios debe sobreescribir al otro , esto es lo que afecta las cuatro AREAS
+una pregunta que surge es como sabe el comando git status que estamos en medio de una fusion y que hay un conflicto en este archivo , bueno lo sabe porque 
+el comando de fusion creo algunos archivos en el directorio .git
+
+lo primero es arreglar el conflicto y decidir como iran estos cambios en el archivo , cuando lo resolvemos debemos usar el index para decirle a git que informacion va a la proxima confirmacion 
+-git add 
+git commit , git nos muestra automaticamente que se soluciono el problema y se compromete 
+
