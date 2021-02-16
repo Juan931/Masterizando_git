@@ -180,3 +180,22 @@ estamos en las rama master verificamos y todo los datos estan en los tres lados 
  por HEAD , pero la rama actual ya esta apuntando , el resultado es que destabiliza los cambios volviendo los datos al repositorio , el archivo 
  aparecera en rojo pero no queremos agregarlo , en este caso lo que podemos hacer es 
  -git reset --hard HEAD hay que tener cuidado con este comando ya que es una de las formas mas destructivas que pueden haber , 
+
+LAS CUATRO AREAS HERRAMIENTAS AVANZADAS 
+
+Almacenamiento de Datos 
+
+hablaremos de la cuarta area donde se almacenan los datos que se llama stash , si queremos que algo suceda en el stash debemos ser muy explicitos al respecto 
+los datos en stash no cambian a menos que lo desiemos , ya que todos los cambios quedan alojados en stash 
+
+-git stash --include-untracked esto significa almacenar archivos que aun no se han rastreado , guardado , arcivos que son completamente nuevos en el area de trabajo 
+git toma todos los tados que hay en el area de trabajo y el index , y los copia pasandolos al stash y luego verifica el repositorio pasando esos datos tambien ,
+nuestros archivos han desaparecido tanto del area de trabajo como del index , no se han ido por supuesto , estan en estash , y podemos ver el contenido con 
+
+-git stash list , y lo podemos ver, todo el trabajo empaquetado que optiene un id de serie, que se puede denotar al principio 
+esto nos sirve para tener un trabajo medio hacer , pero permanecera en un escondite , luego de hacer todo el trabajo que queremos y lo terminamos podemos recuperar todas las
+cosas que escondimos .
+
+-git stash aplly , nos aparecera en rojo , los elementos en el area de trabajo lo mismo pasa si los tenemos al principio y todavia no queremos agregarlos ni confirmarlos 
+tambien podemos eliminar algo del stash - git stash clear 
+
