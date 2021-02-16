@@ -254,4 +254,23 @@ HISTORIA EXPLARANDO EL PASADO
 
 source my_env/bin/activate este comando espara python activarlo y para desactivarlo usamos deactivate
 
+esto se trata en explara el pasado y darle sentido , veremos en como cambiar la historia 
+VIM el editor de texto , lo que hace es que uno se sienta como un sirujano de texto , igualmente git se siente asi por lo que trabaja con la historia, este modulo 
+tratara en como volvernos cirujanos de historia, nos centraremos solo en el repositorio .
+
+COMPROMISOS DE REFERENCIA
+
+Hay muchas formas de referirnos a un commit en git , podemos usar git log para ver el historial en git pero no es muy buena , ya que aplasta todo el contenido en una sola lista 
+por lo tanto es dificil dar sentido a las ramas y fusiones y entender lo que realmetne sucedio , entonces para ello usaremos git log con algunas opciones 
+
+--graph : me da la opcion de una estructura tipo grafico donde puedo ver como los commits se ramifican y fusionan 
+--decorate:muestra las referencias posicionales como ramas y HEAD
+--oneline: formateare el registro para que cada confirmacion tome solo una linea , todas juntas nos mostraran la estructura del repositorio 
+
+- git show nos muestra un commit que querramos ver usando su hash "su id" 
+la otra forma tambien es darle una referencia que apunte a ese commit por lo que puede ser el nombre de la rama pero debe apuntar a ese commit 
+
+pero que pasa si queremos mover el head ha sierto comit y mirar su informacion podemos hacerlo de la siguiente manera
+git show HEAD flecha arriva
+
 
