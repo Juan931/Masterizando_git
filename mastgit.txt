@@ -167,3 +167,8 @@ estamos en las rama master verificamos y todo los datos estan en los tres lados 
 
  git reset numero del commit , esto hara que la rama retroceda en el tiempo , las opciones para restablecer se trata de 
  un restablecimiento parcial o un restablecimiento mixto 
+
+ para restablecer de una forma completa lo que podemos hacer es para estar limpios otra vez es 
+
+ -git reset --hard nombre de la rama en la que queremos estar , lo que hace git es arrastrar los archivos que tenemos en esa rama 
+ y copiarlos tanto en el repositorio como index y lugar de trabajo 
