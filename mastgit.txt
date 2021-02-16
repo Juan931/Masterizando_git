@@ -280,3 +280,15 @@ hablaremos de como podremos explorar y estan conectado los "commit "en el histor
 y tambien el orden en que va el commit 
 
 otro comando tambien es -git diff que seria comparando archivos 
+
+EXAMINAR EL REGISTRO 
+
+Git log es un comando muy poderos , que puede ayudar a muchas cosas 
+podemos tener una diferencia detallada para cada confirmacion en el registro 
+-git log --patch 
+para ver que cambios se introdujeron en la confirmacion 
+
+tambie podemos filtral los commits 
+-git log --grep nombre de la rama --oneline 
+
+
