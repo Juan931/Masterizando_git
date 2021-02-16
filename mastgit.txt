@@ -273,4 +273,10 @@ la otra forma tambien es darle una referencia que apunte a ese commit por lo que
 pero que pasa si queremos mover el head ha sierto comit y mirar su informacion podemos hacerlo de la siguiente manera
 git show HEAD flecha arriva
 
+SEGUIMIENTO DE CAMBIO EN EL HISTORIAL 
 
+hablaremos de como podremos explorar y estan conectado los "commit "en el historial
+-git blame nombre del archivo : aca esta toda la historia del archivo y quien cambio ese commit nombre de la persona 
+y tambien el orden en que va el commit 
+
+otro comando tambien es -git diff que seria comparando archivos 
