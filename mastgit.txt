@@ -326,4 +326,6 @@ cambiar la historia del cambio , necesitamos una referencia de un commit , norma
 lo que hacemos es modificar el commit que queremos remplazando pick por reword , cogemos el commit que creamos lo cortamos y escogemos el lugar donde queremos que vaya 
 podemos congelar el terminal por un momento , git nos mostrara las opciones para continuar esto tambien nos sirve para unir commits uno entre si 
 
+NAVEGAR POR EL REFLOG 
+
 
