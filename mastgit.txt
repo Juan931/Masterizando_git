@@ -328,4 +328,25 @@ podemos congelar el terminal por un momento , git nos mostrara las opciones para
 
 NAVEGAR POR EL REFLOG 
 
+Cuando hacemos algo que cambia el historial , git tiene que copiar informacion de los commits antiguos a los nuevos commits , quedando los otros inalcansables sin una rama 
+y cuando git quiera los puede recolectar como basura, pero que pasa si los queremos retomar y volver a ellos , no es comun pero puede suceder , hay una manera de recuperar los hash de esos commits
+para poderlos recuperar ,git siempre registra movimientos y referencias , cada vez que se hace un movimiento o cambio git lo registra en algo llamado 
+registros de referencias el llamado reflog , y lo podemos mirar de la siguiente manera
 
+git reflog HEAD: Podemos navergar por cualquier refrencia en este caso lo haremos por HEAD ya que nos mostrara los mivimientos que ha hecho desde el primer momento 
+podemos ver el commit de la siguiente manere 
+
+-git show nombre del commit 
+
+REESCRIBIENDO GRANDES TROSOS 
+
+Posiblemente se quiera revisar la historia y encontraremos archivos con gran informacion , pero hay que hacer alguna modificacion 
+aveces es necesario verificar todos los commits en la historia y resescribir muchos de ellos para ello git solia tener un comando 
+
+- git filter-branch : puede cambiar toda la historia con un comando , es como una bomba nuclear 
+pero tiene varias complicaciones entonces hay otro comando que es "filter-repo "
+
+digamos que quiero eliminar un archivo que es muy grande lo podemos hacer con 
+
+git filter-repo --path nombre del archivo  --invert-paths , este comando lo que quiere decir esque todos los archivos permanecerarn excepto el archivo que estamos seleccionando
+y al hacer esto el archivo se ha eliminado de todas las confirmaciones - hay que tener cuidado con este comando ya que es muy destructivo .
