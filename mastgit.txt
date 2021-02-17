@@ -350,3 +350,18 @@ digamos que quiero eliminar un archivo que es muy grande lo podemos hacer con
 
 git filter-repo --path nombre del archivo  --invert-paths , este comando lo que quiere decir esque todos los archivos permanecerarn excepto el archivo que estamos seleccionando
 y al hacer esto el archivo se ha eliminado de todas las confirmaciones - hay que tener cuidado con este comando ya que es muy destructivo .
+
+REVERTIR CONFIRMACIONES 
+
+Tenemos una rama que no sigue las reglas en el sentido de informacion , en este caso tenemos el archivo pero no la informacion , entocnes decidimos eliminar la confirmacion 
+hay una forma mas segura de hacerlo es editar la nueva linea y crear una nueva confirmacion podemos decirle a git que lo haga automaticamente
+
+-git revert seguido del id : lo que sucede es que git crea automaticamente una nueva confirmacion que contiene cambios que son exactamente lo opuesto a los cambios en esta confirmacion original y podemos 
+añadir multiples lineas . lo que hace es que revierte los cambios de una manera segura , por lo que no toca los commits existentes .
+
+esto no puede revertir cambios estructurales a la historia , por ejemplo si intentamos revertir una fusion la reversion puede eliminar todos los datos agregado por la fusion 
+pero no puede eliminar la confirmacion de fusion en si , la fusion sigue ahi , y esto puede causar algunas situaciones confusas en el futuro , especialmente si intenta fusionarse despues de eso .
+
+hay que tener cuidad cuando se revierten las fusiones . esto e lo que hace que seamos cirujanos en git 
+
+parafo
