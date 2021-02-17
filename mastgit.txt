@@ -313,6 +313,17 @@ para tener solo un commit .
 
 lo que podemos hacer es modificar el ultimo commit -git commit --amend : esto es enmenda adicional , lo que estamos haciendo es modificar la ultima 
 confimacion , para incluir el archivo pendiente , git lo que hace es copiar la confirmacion actual a otra confirmacion, luego head y la rama se mueven a esa confirmacion 
+ya que cada commit es inmutable .
 
+NAVEGAR POR LAS BASES DE DATOS 
+
+-git blame nombre del archvio: esto nos va amostrar cuando se agregaron las lineas al archivo, podemos observar los commits y si queremos modificar uno de ellos para 
+agregar mas informacion lo podemos hacer primero crearemos un archivo y lo comprometemos con un nuevo compromiso segundo , cambiare el historial de mi proyecto para que este 
+commit y el antiguo se aplasten en uno solo de la siguiente manera 
+
+git rebase --interactive o tambien -i commit seguido : rebase deja de ser un rebase normal y se convierte una super poderosa edicion de historia ; resabe evoluciona para convertirse en 
+cambiar la historia del cambio , necesitamos una referencia de un commit , normalmente seria dese origin master para que nos muestre todos los commits , esto significa que deja editar el historial de este commit en adelante 
+lo que hacemos es modificar el commit que queremos remplazando pick por reword , cogemos el commit que creamos lo cortamos y escogemos el lugar donde queremos que vaya 
+podemos congelar el terminal por un momento , git nos mostrara las opciones para continuar esto tambien nos sirve para unir commits uno entre si 
 
 
