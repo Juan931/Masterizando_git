@@ -291,4 +291,17 @@ para ver que cambios se introdujeron en la confirmacion
 tambie podemos filtral los commits 
 -git log --grep nombre de la rama --oneline 
 
+REGLA DE ORO 
+
+Veremos como editar el historial del proyecto , cada vez que usamos rebase esta cambiando el historial , veremos herramientas 
+utiles que son importantes en situaciones de emergencias , errores de reparacion , una regla importante de git rebase es nunca 
+se debe volver a redactar confirmaciones compartidas , es decir una vez que se empuje el commit a un repositorio compartido , apartir 
+de ese momento se debe evitar rebasar ese commit ya que rebase es un comando que cambia la historia copia todas la confirmaciones a 
+nuevas confirmaciones , las nuevas confirmaciones pueden tener el mismo aspecto que las anteriores pero en realidad son objetos diferentes
+en la base de datos .
+
+por lo tanto si se modifica las confirmaciones que otras personas tienen en su repositorio , se puede crear mucha confusion y se pueden crear
+conflictos que no se pueden solucionar sin ajustes manuales ,esta regla no se ajusta solo a rebase tambien a diferentes tecnicas que veremos
+nunca debemos cambiar el historial compartido en un equipo de trabajo .
+
 
