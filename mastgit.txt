@@ -304,4 +304,15 @@ por lo tanto si se modifica las confirmaciones que otras personas tienen en su r
 conflictos que no se pueden solucionar sin ajustes manuales ,esta regla no se ajusta solo a rebase tambien a diferentes tecnicas que veremos
 nunca debemos cambiar el historial compartido en un equipo de trabajo .
 
+CAMBIAR LA ULTIMA CONFIRMACION 
+
+Estamos en un archivo que acabamos de modificar, luego lo que hacemos es agregarlo al index y comprometerlo 
+pero no terminamos el trabajo 
+adicionalmente tengo otro archivo nuevo y le pongo datos , me gustaria volver y arreglar mi ultimo commit y agregar este archivo al utimo commit
+para tener solo un commit .
+
+lo que podemos hacer es modificar el ultimo commit -git commit --amend : esto es enmenda adicional , lo que estamos haciendo es modificar la ultima 
+confimacion , para incluir el archivo pendiente , git lo que hace es copiar la confirmacion actual a otra confirmacion, luego head y la rama se mueven a esa confirmacion 
+
+
 
