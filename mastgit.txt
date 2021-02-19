@@ -388,3 +388,25 @@ se puede pensar en este modulo como patrones de flujo de trabajo de Git
 cosas a saber importantes ;
 
 que es un control remoto, conceptos en empujar un control remoto , tirar de un control remoto 
+
+MODELO DE DISTRIBUCION 
+
+Lo primero que se debe decidir cuando se configura un flujo de trabajo de git la decision que influye en la 
+mayoria de las otras decisiones en el futuro es el modelo de distribucion es lo mas probable de igual a igual 
+uno puede compartir modificaciones y compromisos entre el equipo .
+
+se debe tener en cuenta un rapositorio unico bendecido , para que sea accesible para todos en el proyecto , tanto para 
+tirar como para empujar ,esto se conoce como origen remoto por lo general el repositorio bendecido es un repositorio simplemente
+lo que significa que es solo un repositorio sin un area de trabajo o index , nadie esta trabajando en esta maquina 
+
+solo se usa para compartir datos y tal vez para alojar la maquina de compilacion lo podemos asosiar con un robot 
+aca solo nos va a importar los datos que hayan en el bendecido repositorio , por lo que todos podemo extrar los datos de ese
+repositorio , y de esta forma todo estara mas centralizado , se puede llamar al bendito repositorio el servidor y el modelo que se esta 
+manejando se llama , modelo centralizado .
+
+pero hay otro modelo que es un giro en el modelo centralizado en el que todavia tiene repositorios de desarrollador y todavia tiene un repositorio
+central bendecido , pero la mayoria no pueden escribir directamente la repositorio bendecido , donde solo se puede tirar de el , solo unas pocas personas 
+en el proyecto tienen ese poder para llevar datos a ese bendito repositorio , se les llama los mantenedores y a los otros contribuyentes 
+
+el truco aqui es que el mantenedor tambien puede ver los repositorios de los contribuyentes los cuales le pueden enviar un mensaje al mantenedor , por lo general se 
+llama una solicitud de extraccion , si el mantenedor esta deacuerdo traera los cambios de los contribuyentes , solucionar conflictos y llevarlos al repositorio bendecido 
