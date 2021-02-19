@@ -365,3 +365,26 @@ pero no puede eliminar la confirmacion de fusion en si , la fusion sigue ahi , y
 hay que tener cuidad cuando se revierten las fusiones . esto e lo que hace que seamos cirujanos en git 
 
 parafo
+
+ENCONTRAR SU FLUJO DE TRABAJO
+
+FLUJO DE TRABAJO DE GIT 
+
+La idea de git es poder compartir codigo con otros desarrolladores , y tenemos muchas ideas para compartir esa informacion 
+el conjunto de git es tan poderoso y flexible que aveces puede parecer que tiene demasiadas opciones , y eso puede causar algunos 
+dolores de cabeza cuando varias personas desiden trabajar en un proyecto compartido , para evitar esos dolores de cabeza ,como equipo se
+deben tomar algunas decisiones sobre como trabajar juntos , sobre todo en tres cosas en particular.
+
+1. saber que tipo de modelo de distribucion adoptar , cuantos repositorios se tienen y como interactuan 
+2 .tomar decisiones sobre las sucursales , para que ramas tiene su proyecto y para que las utilizamos , que rama utilizo para integrar mi trabajo con el 
+trabajo de otros desarrolladores 
+3 restricciones para los que necesitan el proyecto 
+
+entonces : modelo de distribucion, modelo de ramificacion ,modelo de restriccion , estas tres cosas juntas definen lo que pueden llamar "un flujo de trabajo distribuido"
+como usar git en la practica en un proyecto de la vida real , esto sera un tema social mas que un tema tecnico .git
+
+se puede pensar en este modulo como patrones de flujo de trabajo de Git 
+
+cosas a saber importantes ;
+
+que es un control remoto, conceptos en empujar un control remoto , tirar de un control remoto 
