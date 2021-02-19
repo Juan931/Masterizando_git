@@ -466,6 +466,14 @@ HABLANDO DE GIT
 
 Git workflows en google buscar 
 
-COMO SE TE OCURRE TU PROPIO FLUJO DE TRABAJO 
+HACER CRECER UN FLUJO DE TRABAJO
+
+Debemos esforazarnos por hacer crecer nuestro flujo de trabajo , se debe agregar la complejidad amedida en que se avanza en el proyecto,
+pero de lo contrario no es necesario si es algo basico , se puede agregar restricciones, nuevas ramas , ideas de otros modelos de distribucion eso es 
+hacer crecer el flujo del trabajo 
+. 
+
+si deseas un comportamiento complejo e inteligente proponga principios simples , porque los principios simples le dan a las personas el espacio que necesitan 
+para ser flexibles e inteligentes para resolver los problemas inesperados que surgen en un entorno complejo 
 
 
