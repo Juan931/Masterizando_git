@@ -410,3 +410,42 @@ en el proyecto tienen ese poder para llevar datos a ese bendito repositorio , se
 
 el truco aqui es que el mantenedor tambien puede ver los repositorios de los contribuyentes los cuales le pueden enviar un mensaje al mantenedor , por lo general se 
 llama una solicitud de extraccion , si el mantenedor esta deacuerdo traera los cambios de los contribuyentes , solucionar conflictos y llevarlos al repositorio bendecido 
+
+la solicitud de extraccion es la mecanica de este modulo , por lo que se puede llamar modelo de solicitud de extraccion el cual se le conoce con el comando de :
+
+-git request-pull 
+
+gitHub automatiza el envio de solicitudes de extraccion , tanto que las solicitudes de extraccion se han convertido en la caracteristica definitoria de Github.
+
+tambien hablaremos de que hay otro repositorio bendecido que se divide en subproyectos , y cada subproyecto tiene su propio proyecto bendecido y su propio mantenedor ,
+luego estan los contribuyentes generales un ejemplo para esto es linux kernel 
+
+DISEÑO DE SUCURSALES 
+
+Una rama es estable cuando la punta de la rama contiene una version funcional del proyecto , en teoria podriamos empaquetar lo que 
+esta en una rama estable y liberarlos , entonces si alguien agrega nuevas confirmaciones a la rama siempre la punta de la rama va estar apuntando 
+en contrario una rama cuando es inestables es porque esta rota 
+
+ramas tipicas de un proyecto , todos los proyctos tienen una rama principal que se usa para armar todo ,estas suelen ser las ramas que las personas consideran , la rama mas 
+importante del sistema
+
+Hay otor tipo de rama es un elemento basico de muchos proyectos , digamos que hay dos desarrolladores trabajando en dos caracteristicas diferentes y al momento de fusionar y tener la informacion 
+en la rama master se vuelve la historia algo dificil de entender , porque los commits estan siendo intercalados .
+
+lo que podemos hacer aca es crear una nueva rama para cada caracteristica y al momento de fusionar la historia no se perdera esto se le conoce con el nombre de ramas caracteristicas 
+digamos que estas ramas caracteristicas en las que se vienen trabajando , una de ellas tiene un commit que la otra no y deseamos tener esa confirmacion en la otra rama ,
+git tiene un comando especial que se llama cherry-pick , puede seleccionar alguna confirmacion y copiarla encima de otra otra rama ,pero hay 
+que tener en cuenta que cherry-pick es como un pequeño rebase , por lo tanto no son una opcion para productos basados en fusion .
+
+entonces como lo podemos hacer ? 
+
+seria crear otra rama y colocar ese compromiso en ella y luego conbine  la tercer rama en la primera y la segunda rama , y de esta forma 
+tendremos un lugar para tener commits compartidos fucionados sir utilizar rebase .
+
+podemos encontrar tambien lo siguiente. un error en la ultima version y queremos solucionarlo de inmediato y preparar otra version , pero tambien se 
+desea que la misma correccion de errores  este en la rama de integracion para que tambien tenga el error corregido en las proximas versiones.
+
+lo que podemos hacer es colocar la correccion de errores en otra rama y luego convinar las ramas , ahora esta solucion esta en la historia de ambas ramas
+
+"Hotbix branch"
+
