@@ -449,3 +449,15 @@ lo que podemos hacer es colocar la correccion de errores en otra rama y luego co
 
 "Hotbix branch"
 
+ESTABLECER restricciones
+
+al usar restricciones como un nombre general para todas las cosas que claramente no pertenecen al modelo de distribucion o almodelo de rama.
+cada proyecto puede tener su propia regla uno de ellos que puede ser es el tema de fusiones y rebases 
+
+algo que hay que saber muy importante y es que puede hacer qué a que sucursales , ya que pues algunos desarrolladores se comprometen con algunas ramas y no con otras 
+hay una caracteristica importante en git que se llama gancho, basicamente es una forma de ejecutar un script cada vez que ocurre un evento especifico
+entonces es tener este gancho en el servidor que iniciaba un script , cada vez que alguien iniciaba un inicio al servidor .git
+
+que tipo de refactorizacion del historial debe hacer en las ramas de caracteristicas antes de fusionar una nueva, 
+
+algunos flujos de trabajo tiene restricciones 
