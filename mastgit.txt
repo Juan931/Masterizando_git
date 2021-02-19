@@ -476,4 +476,9 @@ hacer crecer el flujo del trabajo
 si deseas un comportamiento complejo e inteligente proponga principios simples , porque los principios simples le dan a las personas el espacio que necesitan 
 para ser flexibles e inteligentes para resolver los problemas inesperados que surgen en un entorno complejo 
 
+PENSANDO EN GIT 
+
+La mayoria de los comando en git se pueden entender en terminos de dos elementos un maestro de git lo que hace es poder interactuar con el historial 
+
+
 
