@@ -461,3 +461,11 @@ entonces es tener este gancho en el servidor que iniciaba un script , cada vez q
 que tipo de refactorizacion del historial debe hacer en las ramas de caracteristicas antes de fusionar una nueva, 
 
 algunos flujos de trabajo tiene restricciones 
+
+HABLANDO DE GIT 
+
+Git workflows en google buscar 
+
+COMO SE TE OCURRE TU PROPIO FLUJO DE TRABAJO 
+
+
